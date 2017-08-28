@@ -54,7 +54,7 @@ Maintenance_cost = (pump_price+pipe_cost)*1/100*2*4*20; % 1% of fixed for every 
 fun =  @(X)Total_cost(X,rho,mu,V,l,n,h,eff,t,inc);
 [d,fval] = fminunc(fun,0.04);
 
-for k = 6:10
+for k = 6:2:16
     j=0;
     val = 0;
     inc =[100+k,107]/100;
